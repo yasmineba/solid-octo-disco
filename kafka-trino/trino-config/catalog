@@ -1,0 +1,6 @@
+connector.name=kafka
+kafka.nodes=kafka:9092
+kafka.default-schema=default
+kafka.table-names=mytopic,trial2
+kafka.hide-internal-columns=true
+

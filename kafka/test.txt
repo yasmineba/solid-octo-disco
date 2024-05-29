@@ -1,0 +1,13 @@
+aslemaaa
+
+
+
+import os
+os.environ['PYSPARK_SUBMIT_ARGS'] = '--packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1 pyspark-shell'
+
+
+# Create a SparkSession
+spark = SparkSession.builder \
+    .appName("KafkaSparkStream") \
+    .config("spark.jars.packages", "org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1") \
+    .getOrCreate()

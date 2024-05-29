@@ -1,0 +1,3 @@
+connector.name=kafka
+kafka.nodes=kafka:9092
+kafka.default-schema=default
